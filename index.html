@@ -350,20 +350,10 @@
 
   /* ── Responsive ── */
 
-  /* Touch-friendly: always show arrow on mobile (no hover) */
+  /* Touch-friendly: subtle tap feedback only */
   @media (hover: none) and (pointer: coarse) {
-    .card-thumb-overlay {
-      opacity: 1;
-      background: rgba(74,26,46,0.35);
-    }
-    .card-arrow {
-      opacity: 1;
-      transform: translate(0, 0);
-      width: 36px;
-      height: 36px;
-    }
     .card:active {
-      transform: scale(0.98);
+      transform: scale(0.97);
     }
   }
 
